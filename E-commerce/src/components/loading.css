@@ -1,0 +1,35 @@
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.spinner {
+  width: 55px;
+  height: 55px;
+  border: 6px solid #374151;
+  border-top: 6px solid #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.loading-screen h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.loading-screen p {
+  color: #9ca3af;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
